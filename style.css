@@ -1,34 +1,20 @@
 img {
-    width: 100%;
+    max-width: 100%;
     display: block;
 }
 
-div  {
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 1rem;
 }
 
-h1 {
-     grid-column: 1 / -1;
+.cover img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
 }
 
-@media (max-width: 600px) {
-    div  {
-        grid-template-columns: 1fr;
-    }
-    h1 {
-        background: lightpink;
-    }
-}
-@media (min-width: 1000px) {
-    html {
-        font-size: 150%;
-    }
-}
-
-@media (min-width: 700px) and (max-width: 900px) {
-    p {
-        background: lightskyblue;
-    }
+p {
+    font-size: 1.5rem;
 }
